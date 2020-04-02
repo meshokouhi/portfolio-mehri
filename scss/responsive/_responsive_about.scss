@@ -1,0 +1,54 @@
+/*======= Responsive Layout, About Page ===========*/
+
+@media only screen and (min-width: $tabletPortrait) {
+  #about-me {
+    width: 75vw;
+    margin-left: 2rem;
+
+    p {
+      font-size: 1.1rem;
+    }
+  }
+
+  #skills-title {
+    text-align: center;
+    background-color: $white;
+    color: $black;
+    margin: 0 auto;
+    padding-left: 0;
+    margin-top: 2rem;
+  }
+
+  .skills {
+    background-color: $white;
+    width: 52vw;
+    margin: 0;
+    padding: 0;
+    max-width: 700px;
+  }
+
+  #developer {
+    background-color: $white;
+    padding-left: 2rem;
+    margin-right: 50%;
+  }
+
+  #designer {
+    background-color: $white;
+    margin-left: 50%;
+    padding-right: 2rem;
+  }
+
+  #dev-tools,
+  #design-tools {
+    padding-top: 5px;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: $desktopMedium) {
+  #about-me p {
+    font-size: 1.2rem;
+  }
+}

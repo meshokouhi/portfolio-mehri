@@ -1,0 +1,38 @@
+/*======= Responsive Layout, Projects Page ===========*/
+
+@media only screen and (min-width: 760px) {
+  .projects-list {
+    .projects {
+      grid-template-rows: 70px 70px repeat(
+          $projects-list-rows,
+          minmax(90px, 100px)
+        );
+    }
+  }
+
+  #vt-05 {
+    grid-column: 8 / 13;
+    grid-row: 9/11;
+  }
+
+  .passion-works {
+    grid-column: 9 / 15;
+    grid-row: 11/14;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .projects-list {
+    .projects {
+      grid-template-rows: 70px 70px repeat($projects-list-rows, 130px);
+    }
+  }
+}
+
+@media only screen and (min-width: 1160px) {
+  .projects-list {
+    .projects {
+      grid-template-rows: 70px 80px repeat($projects-list-rows, 140px);
+    }
+  }
+}

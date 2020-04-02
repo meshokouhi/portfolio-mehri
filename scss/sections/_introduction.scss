@@ -1,0 +1,73 @@
+/* Introduction */
+
+.intro {
+  display: none;
+  width: 98vw;
+  grid-row: 1;
+  position: relative;
+  height: auto;
+
+  &-background {
+    position: relative;
+    margin: 0 auto;
+    max-width: 100vw;
+    img {
+      border: 1px solid $white;
+      max-width: 100vw;
+      width: 70vw;
+      height: auto;
+      height: 200px;
+    }
+  }
+}
+
+#rigth-side-img {
+  position: absolute;
+  top: 130px;
+  right: -30px;
+  z-index: -1;
+}
+
+#greeting {
+  max-width: 100vw;
+  font-family: $greeting-font;
+  font-size: 1.2rem;
+  font-weight: 100;
+  line-height: 2;
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  z-index: 3;
+}
+
+.skills-wrap {
+  display: block;
+  line-height: 1.8;
+  position: absolute;
+  top: 250px;
+  left: 0px;
+  right: -1rem;
+  font-weight: 400;
+  background-color: $black;
+  color: $white;
+  padding: 2.5rem;
+  width: 100vw;
+  z-index: 2;
+
+  p {
+    padding-bottom: 2rem;
+  }
+}
+
+#skills {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: left;
+}
+
+#languages,
+#tools {
+  font-size: 1rem;
+  font-weight: 300;
+  padding-top: 1rem;
+}

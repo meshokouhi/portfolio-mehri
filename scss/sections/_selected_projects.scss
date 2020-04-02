@@ -1,0 +1,101 @@
+/* Selected Projects */
+
+.selected-projects-wrap {
+  grid-row: 2;
+  width: 100%;
+  z-index: 1;
+  margin: 0 auto;
+  margin-top: 4rem;
+
+  h2 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 1rem 0 1.5rem;
+  }
+
+  img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-bottom: 20px;
+    position: relative;
+  }
+}
+
+#abstract {
+  img {
+    opacity: 1;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    left: 0px;
+    z-index: -3;
+  }
+}
+
+#selected-projects-title {
+  padding-top: 4rem;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+@for $i from 1 through $projectNumber + 1 {
+  #v#{$i} {
+    width: 1px;
+    height: 120px;
+    background: $lines-color;
+    margin: 0 auto;
+    margin-top: 30px;
+    @include transition-ease-slow;
+  }
+}
+
+#v1 {
+  margin-top: 0px;
+}
+
+.one-project,
+.v-line,
+.more-projects,
+#selected-projects-title {
+  opacity: 0;
+  &.is-showing {
+    display: block;
+    opacity: 1;
+    transform: translateX(0px);
+    transform: translateY(-50px);
+    @include transition-ease-slow;
+    overflow: hidden;
+  }
+}
+
+.more-projects {
+  &.is-showing {
+    margin: 3rem auto 0;
+    padding-bottom: 0;
+    width: 100%;
+    #{$link-selector} {
+      text-align: center;
+      margin: 2rem auto;
+    }
+  }
+}
+
+#triangle {
+  margin-right: 1rem;
+  width: 24px;
+  height: 24px;
+  float: right;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+}

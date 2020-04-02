@@ -1,0 +1,52 @@
+@media only screen and (min-width: 760px) {
+  #mobile-nav-label,
+  #mobile-contact-info {
+    @include visually-hidden;
+  }
+
+  .nav-wrap {
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+    position: fixed;
+    height: 80px;
+    top: 0;
+    z-index: 10;
+    padding: 0 2rem;
+    @include flex-layout-row;
+  }
+
+  .nav-top {
+    padding: 25px 0;
+  }
+
+  .logo {
+    height: 60px;
+  }
+
+  .nav-list {
+    display: block;
+    margin-top: 30px;
+    height: 60px;
+    width: 50vw;
+  }
+
+  .nav-list {
+    ul {
+      display: inline-flex;
+      float: right;
+      a {
+        font-size: 1rem;
+        padding: 0;
+        color: black;
+        cursor: pointer;
+        padding: 0px 15px;
+        line-height: 1.8;
+        font-size: 1rem;
+        #{$link-hover-selector} {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

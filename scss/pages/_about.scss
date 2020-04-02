@@ -1,0 +1,105 @@
+/*======= About Page ===========*/
+
+.main-wrap-about {
+  width: 100vw;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  margin-top: 80px;
+  @include transition-ease-slow;
+  h1 {
+    padding-bottom: 0px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: center;
+  }
+}
+
+#about-title {
+  padding-bottom: 0px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.about {
+  background-color: $white;
+  display: none;
+  width: 98vw;
+  margin: 4rem auto 1rem;
+}
+
+#about-me {
+  background-image: url("../images/paper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 1rem auto;
+
+  a {
+    #{$link-selector} {
+      margin: 0 auto;
+      cursor: pointer;
+      text-decoration: underline;
+      @include transition-ease;
+    }
+    #{$link-hover-selector} {
+      color: $gray-hover;
+    }
+  }
+
+  p {
+    font-family: $greeting-font;
+    font-size: 1rem;
+    padding: 2rem;
+    text-align: justify;
+  }
+}
+
+#vb {
+  &-01,
+  &-02 {
+    width: 1px;
+    background: $lines-color;
+    margin: 0 auto;
+    transition: all 1s ease-in-out;
+    height: 100px;
+    margin-left: 50%;
+    margin-top: 0px;
+  }
+}
+
+.skills-list {
+  display: block;
+}
+
+#skills-title {
+  width: 98vw;
+  background-color: $black;
+  color: $white;
+  text-align: left;
+  padding: 1rem;
+  padding-left: 2rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+.skills {
+  padding: 2rem;
+  margin-top: 2rem;
+
+  h2,
+  h3 {
+    padding: 1rem 0;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+
+#developer {
+  background-color: $dark-gray-bg;
+}
+
+#designer {
+  background-color: $ligth-gray-bg;
+  margin-bottom: 1rem;
+}

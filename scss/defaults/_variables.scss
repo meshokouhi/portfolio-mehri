@@ -1,0 +1,43 @@
+/*======= Variables ===========*/
+
+/* Colors */
+$white: #fff;
+$black: #000;
+$light-black: #1d1d1d;
+$red: #c40808;
+$gray-hover: #747474;
+$lines-color: #adadad;
+
+$code-t-bg: #b1c5db4d;
+$gray-t-bg: #828282;
+$dark-gray-t-bg: #272727;
+$ligth-gray-bg: #d4d4d4;
+$dark-gray-bg: #818181;
+$tooltip-bg: #f5f5f5;
+
+/* Fonts */
+$body-font: "Montserrat", sans-serif;
+$greeting-font: "Coda", cursive;
+
+/* Typographic Defualts */
+$line-height: 1.8;
+
+/* Layout variables */
+$padding: 30px;
+
+/* Links */
+$link-hover-selector: "&:hover, &:focus, &:active";
+$link-selector: "&:link, &:visited";
+
+/* Media Query Breakpoints */
+$desktop: 1160px;
+$desktopMedium: 1090px;
+$tabletLandscape: 920px;
+$tabletPortrait: 760px;
+$tabletSmall: 600px;
+$phoneLandscape: 500px;
+$phonePortrait: 400px;
+
+/* Projects number */
+$projectNumber: 5;
+$projects-list-rows: ($projectNumber + 1) * 2;

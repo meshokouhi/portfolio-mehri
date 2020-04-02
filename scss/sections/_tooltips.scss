@@ -1,0 +1,58 @@
+/* Next-Previous, Tooltips */
+
+.next-prev-project {
+  width: 250px;
+  margin: 3rem auto 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  width: 140px;
+  text-align: center;
+  font-size: 1rem;
+
+  .tooltiptext {
+    font-size: 0.9rem;
+    visibility: hidden;
+    background-color: $tooltip-bg;
+    color: $black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 40px;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-family: $greeting-font;
+    font-size: 1rem;
+    width: 150px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: $tooltip-bg transparent transparent transparent;
+    }
+  }
+
+  &:hover {
+    .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+#coming-soon {
+  cursor: default;
+}

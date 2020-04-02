@@ -1,0 +1,255 @@
+/*======= Home Page ===========*/
+.body-wrap {
+  max-width: 100vw;
+  position: relative;
+}
+
+.main-wrap-project {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 8rem;
+
+  h1,
+  h2 {
+    font-size: 1.2rem;
+    padding-bottom: 0;
+    display: none;
+    font-weight: 400;
+  }
+}
+
+#project {
+  margin-left: calc(50% - 2rem);
+  font-size: 1.2rem;
+}
+
+.design-layout {
+  h3 {
+    font-size: 1.2rem;
+    padding: 0.9rem;
+    font-weight: 400;
+    background-color: $dark-gray-t-bg;
+    color: $white;
+    padding-left: 2rem;
+  }
+}
+
+/* About */
+
+.about-project {
+  background-color: $black;
+  color: $white;
+  max-width: 100vw;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  display: block;
+  margin-top: 2rem;
+  margin-left: -100%;
+}
+
+#project-image {
+  margin-left: -100%;
+}
+
+.about-project {
+  h1 {
+    width: 100%;
+    text-align-last: left;
+    font-family: $greeting-font;
+    font-size: 2rem;
+    padding: 0 2rem 1rem;
+    float: left;
+    line-height: 2;
+  }
+}
+
+.project-description {
+  p {
+    padding: 0 2rem;
+    text-align: justify;
+  }
+}
+
+/* Project Details */
+
+.project-details {
+  display: none;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+
+  h2 {
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+  }
+}
+
+/* Wireframes and Mockups */
+
+.design-layout {
+  background-color: $dark-gray-bg;
+  padding-bottom: 1rem;
+}
+
+#m-l-03,
+#d-l-03 {
+  display: none;
+}
+
+#m-l-02,
+#d-l-02 {
+  margin-top: 3rem;
+}
+
+#mockups {
+  width: 100%;
+  background: $dark-gray-bg;
+  margin: 2rem auto;
+  overflow: hidden;
+  padding: 1rem;
+  text-align: left;
+  padding-left: 2rem;
+}
+
+.mobile-layout,
+.desktop-layout {
+  background-color: $ligth-gray-bg;
+  overflow: hidden;
+  display: block;
+  padding: 1rem;
+  margin: 1rem 2rem;
+  img {
+    margin: 0 auto;
+  }
+}
+
+/* Responsive */
+
+.responsive {
+  margin-top: 5rem;
+  position: relative;
+}
+
+#responsive-title {
+  width: 100vw;
+  background: $gray-t-bg;
+  height: 4rem;
+  float: left;
+  position: absolute;
+  z-index: 2;
+  margin-top: -2rem;
+  text-align-last: left;
+}
+
+.mobile-responsive {
+  width: calc(100% - 4rem);
+  background-color: $light-black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 2rem;
+  margin-top: -1rem;
+  padding: 1rem 4rem;
+  img {
+    background: black;
+    width: 100vw;
+  }
+}
+
+.desktop-responsive,
+.all-device-responsive {
+  background-color: $light-black;
+  margin: 0 auto;
+  margin: 1rem 2rem;
+  padding: 1rem;
+  img {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+
+/* Code Snippets */
+
+.code-snippet {
+  margin: 2rem 0 4rem;
+  text-align: left;
+  img {
+    padding: 0 2rem;
+  }
+  a {
+    #{$link-selector} {
+      color: $white;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+      margin: 2rem 0 0 2rem;
+      padding: 1rem 2rem;
+      background-color: $light-black;
+    }
+    #{$link-hover-selector} {
+      color: $red;
+    }
+  }
+}
+
+.code-snippet-title {
+  background-color: $code-t-bg;
+  width: 100%;
+  margin: 0;
+}
+
+/* Back-end */
+
+.php-project,
+.mysql-project {
+  a {
+    #{$link-selector} {
+      color: $red;
+      font-size: 0.9rem;
+      padding-left: 2rem;
+    }
+  }
+  p {
+    padding: 1rem 2rem;
+    text-align: justify;
+  }
+}
+
+.back-end-project-title {
+  background-color: $gray-t-bg;
+}
+
+/* Passion works */
+
+.passion-work {
+  margin-bottom: 3rem;
+  background-color: $ligth-gray-bg;
+  color: $black;
+  overflow: hidden;
+  padding: 1rem 0;
+  p {
+    text-align: justify;
+    font-size: 1rem;
+    padding: 2rem;
+  }
+  a {
+    #{$link-selector} {
+      color: $red;
+      font-size: 0.9rem;
+      padding-left: 2rem;
+    }
+  }
+  .work-video {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .videos {
+    height: 60vw;
+    width: 80vw;
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+.passion-work-title {
+  background-color: $gray-t-bg;
+}

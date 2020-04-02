@@ -1,0 +1,13 @@
+/*======= Projects Page ===========*/
+
+.main-wrap-projects {
+  display: grid;
+  grid-template-rows: auto auto;
+  margin-top: 80px;
+}
+
+.selected-projects-wrap {
+  .projects {
+    margin-top: 0;
+  }
+}
