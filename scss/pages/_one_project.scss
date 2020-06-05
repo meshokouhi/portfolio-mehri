@@ -69,6 +69,14 @@
     padding: 0 2rem;
     text-align: justify;
   }
+  a {
+    text-decoration: underline;
+
+    #{$link-hover-selector} {
+      color: $red;
+      transition: all 0.5s ease-in-out;
+    }
+  }
 }
 
 /* Project Details */
@@ -178,6 +186,7 @@
   }
   a {
     #{$link-selector} {
+      text-decoration: underline;
       color: $white;
       cursor: pointer;
       transition: all 0.5s ease-in-out;
