@@ -731,6 +731,16 @@ footer {
   text-align: justify;
 }
 
+.project-description a {
+  text-decoration: underline;
+}
+
+.project-description a:hover, .project-description a:focus, .project-description a:active {
+  color: #c40808;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
 /* Project Details */
 .project-details {
   display: none;
@@ -843,6 +853,7 @@ footer {
 }
 
 .code-snippet a:link, .code-snippet a:visited {
+  text-decoration: underline;
   color: #fff;
   cursor: pointer;
   -webkit-transition: all 0.5s ease-in-out;
